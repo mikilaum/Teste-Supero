@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <section class="form-group">
+        <form novalidate [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+          <fieldset>
+            <div class="form-group row">
+              <label>Task Name</label>
+              <input type="text"
+                    class="form-control"
+                    formControlName="taskName">
+            </div>
+
+            <div class="form-group row">
+              <label>Task Description</label>
+              <input type="text"
+                    class="form-control"
+                    formControlName="taskDescription">
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <div>
+              <button type="submit" class="btn btn-outline-success"  [disabled]="!taskForm.valid" >Submit</button>
+            </div>
+          
+            <div>
+              <button type="button" style="margin-left: 10px;" class="btn btn-outline-warning" (click)="redirectTaskPage()">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+com\supero\springservice\config\RepositoryConfig.class
+com\supero\springservice\repository\TaskRepository.class
+com\supero\springservice\config\RestConfig.class
+com\supero\springservice\Application.class
+com\supero\springservice\entity\Task.class
